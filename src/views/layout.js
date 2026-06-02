@@ -228,7 +228,7 @@ ${bodyStr}
     <div class="footer-patreon">
       🎙️ <strong>Apropos Geld:</strong> Etienne, Jochen und Georg machen den Podcast nicht ohne Grund freiwillig –
       <a href="https://www.patreon.com/podcastohnenamen" rel="noopener" target="_blank">unterstütze die drei auf Patreon</a>
-      und Etiennes Mikrowelle, Jochens Hund Poppy und Georgs Brille danken's dir.
+      und Etiennes Mikrowelle, Jochens Hund Carlo und Georgs Brille danken's dir.
     </div>
     <nav class="footer-social" aria-label="Social Media">
       <a href="https://www.patreon.com/podcastohnenamen" rel="noopener" target="_blank" title="Den Podcast unterstützen">🎙️ Patreon (Podcast)</a>

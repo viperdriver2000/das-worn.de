@@ -17,7 +17,7 @@ const HOST_INFO = {
   jochen: {
     name: "Jochen Dominicus",
     aliases: ["Danger Dominicus"],
-    blurb: "Der Mann mit der USB-Maus, die manchmal spinnt. Hat ein gespanntes Verhältnis zur 110, ein Faible für ausführliche Anekdoten und einen Hund namens Poppy.",
+    blurb: "Der Mann mit der USB-Maus, die manchmal spinnt. Hat ein gespanntes Verhältnis zur 110, ein Faible für ausführliche Anekdoten und einen Hund namens Carlo.",
     fun: 'Ruft öfter mal die Polizei wegen Kleinigkeiten und hat einmal eine Marihuana-Plantage über sich wohnen gehabt (London). Co-Host des Podcasts „Pinkelpause".',
     color: "#3a86ff",
     socials: [
@@ -30,7 +30,7 @@ const HOST_INFO = {
     name: 'Georg „Onkel Barlow" Zaal',
     aliases: ["Onkel Barlow"],
     blurb: "Der Rätselmeister. Stellt am Ende fast jeder Folge das Rätsel und sitzt strategisch über den Punkten – ohne die meisten selbst zu kriegen, denn er stellt sie ja.",
-    fun: "Trägt eine orange-getönte Brille (Edgar-Davids-Fan-Geste oder niederländische Wurzeln, je nach Auslegung). Eigene Podcasts wie BMZ.",
+    fun: "Trägt eine orange-getönte Brille (Edgar-Davids-Fan-Geste oder niederländische Wurzeln, je nach Auslegung). Eigene Podcasts wie BMZ. Herrchen von Hund Poppy, dem heimlichen vierten Host.",
     color: "#2a9d8f",
     socials: [
       { label: "Instagram @onkelbarlow", url: "https://www.instagram.com/onkelbarlow/" },
@@ -807,8 +807,8 @@ export function renderHosts({ stats }) {
       <div class="patreon-cta-emoji">🎙️💸</div>
       <h2>Die drei brauchen unser Geld!</h2>
       <p>
-        Etiennes Mikrowelle wird nicht jünger, Jochens Hund Poppy frisst gerne und Georgs orange Brillengläser müssen
-        ja auch irgendwo herkommen. Ohne Patreon-Support keine ${stats.episodeCount} Folgen Quatsch.
+        Etiennes Mikrowelle wird nicht jünger, Jochens USB-Maus spinnt und Georgs Hund Poppy frisst gerne – und die
+        orange Brille muss ja auch irgendwo herkommen. Ohne Patreon-Support keine ${stats.episodeCount} Folgen Quatsch.
       </p>
       <p class="patreon-cta-sub">
         Im Ernst: Wenn dir der Podcast Freude macht, hau ein paar Euro raus. Reicht für einen Sack Tiefkühlpommes,

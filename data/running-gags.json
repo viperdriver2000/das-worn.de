@@ -30,11 +30,11 @@
   "poppy": {
     "name": "Poppy",
     "emoji": "🐕",
-    "description": "Jochens Hund. Hatte mal ein gerissenes Band. Tritt immer wieder in Geschichten auf: Begegnungen im Park, Spaziergänge durchs Viertel (wo dann häufig Kreidefrau- oder Porsche-Sichtungen passieren). Sozusagen der heimliche vierte Host.",
+    "description": "Georgs Hund – der kleinere seiner beiden Hunde (der ältere heißt Holly). Hatte mal ein gerissenes Band. Taucht immer wieder in Geschichten auf: Begegnungen im Park, Gassi-Runden durchs Viertel, Diskussionen über die richtige Hunde-Kühlmatte. Sozusagen der heimliche vierte Host. Nicht zu verwechseln mit Carlo, dem Hund von Jochen.",
     "origin": "Wird ab Folge #1 immer wieder erwähnt.",
     "pattern": "poppy",
     "dedicatedEpisodes": [],
-    "host": "jochen"
+    "host": "georg"
   },
   "lobberich": {
     "name": "FC Lobberich-Dick",
