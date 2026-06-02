@@ -1,26 +1,26 @@
 {
-  "episodeCount": 362,
+  "episodeCount": 363,
   "skippedRaetselCount": 0,
-  "totalWords": 5193199,
-  "totalChars": 30449230,
-  "avgWords": 14346,
+  "totalWords": 5205471,
+  "totalChars": 30521961,
+  "avgWords": 14340,
   "winners": {
     "etienne": 163,
     "jochen": 123,
     "georg": 19,
-    "unknown": 70,
+    "unknown": 71,
     "beidenEpisodes": 12,
-    "riddleCount": 379
+    "riddleCount": 380
   },
   "totalMentions": {
-    "etienne": 3417,
-    "jochen": 6331,
-    "georg": 3778
+    "etienne": 3426,
+    "jochen": 6337,
+    "georg": 3785
   },
   "topGlobal": [
     {
       "word": "diese",
-      "count": 8700
+      "count": 8733
     },
     {
       "word": "jochen",
@@ -28,7 +28,7 @@
     },
     {
       "word": "zwei",
-      "count": 4623
+      "count": 4635
     },
     {
       "word": "podcast",
@@ -36,7 +36,7 @@
     },
     {
       "word": "dieser",
-      "count": 2320
+      "count": 2335
     },
     {
       "word": "dieses",
@@ -44,7 +44,7 @@
     },
     {
       "word": "drei",
-      "count": 2011
+      "count": 2027
     },
     {
       "word": "ahnung",
@@ -56,7 +56,7 @@
     },
     {
       "word": "euro",
-      "count": 1827
+      "count": 1846
     },
     {
       "word": "georg",
@@ -80,7 +80,7 @@
     },
     {
       "word": "gedacht",
-      "count": 905
+      "count": 922
     },
     {
       "word": "drauf",
@@ -248,21 +248,21 @@
     }
   ],
   "totalFun": {
-    "haha": 28,
-    "quatsch": 768,
-    "cool": 1410,
-    "geil": 4040,
-    "krass": 894,
+    "haha": 29,
+    "quatsch": 772,
+    "cool": 1413,
+    "geil": 4052,
+    "krass": 898,
     "digga": 26,
-    "alter": 1736,
-    "scheisse": 3223,
-    "leute": 9355,
-    "tschuess": 866,
-    "podcast": 6142,
+    "alter": 1741,
+    "scheisse": 3231,
+    "leute": 9377,
+    "tschuess": 867,
+    "podcast": 6155,
     "pommes": 378,
     "nettetal": 4,
     "lobberich": 119,
     "nordfriese": 2
   },
-  "estimatedHours": 666
+  "estimatedHours": 667
 }
