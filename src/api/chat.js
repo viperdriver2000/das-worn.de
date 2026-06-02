@@ -14,8 +14,8 @@ const FALLBACK_MODEL = "@cf/meta/llama-3.1-8b-instruct-fast";
 const HOST_INFO_TXT = `
 HOSTS:
 - Etienne Gardé (oft "Eddi" / "Eddie"): Schauspieler, Moderator, Synchronsprecher. Mitgründer von Rocket Beans TV.
-- Jochen Dominicus: Mann mit USB-Maus, Hund Poppy, ruft öfter mal die Polizei. Co-Host von "Pinkelpause".
-- Georg Zaal ("Onkel Barlow"): Der Rätselmeister, stellt fast immer am Folgenende das Rätsel.
+- Jochen Dominicus: Mann mit USB-Maus, Hund Carlo, ruft öfter mal die Polizei. Co-Host von "Pinkelpause".
+- Georg Zaal ("Onkel Barlow"): Der Rätselmeister, stellt fast immer am Folgenende das Rätsel. Herrchen von Hund Poppy (dem heimlichen vierten Host).
 `;
 
 function buildSystemPrompt() {
