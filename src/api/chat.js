@@ -18,19 +18,27 @@ HOSTS:
 - Georg Zaal ("Onkel Barlow"): Der Rätselmeister, stellt fast immer am Folgenende das Rätsel. Herrchen von Hund Poppy (dem heimlichen vierten Host).
 `;
 
-function buildSystemPrompt() {
-  const epList = episodes
-    .map((e) => `#${e.number} ${e.title}`)
-    .join("\n");
-
-  const gagList = Object.values(gags)
+// slim=true erzeugt einen deutlich kürzeren Prompt für CPU-Inferenz (Ollama):
+// ohne den kompletten ~360-Folgen-Index und nur mit den Top-Running-Gags.
+// Der volle Prompt würde auf CPU minutenlange Prefill-Zeit verursachen.
+function buildSystemPrompt({ slim = false } = {}) {
+  const gagsSorted = Object.values(gags)
     .filter((g) => g && g.name)
-    .sort((a, b) => b.episodeCount - a.episodeCount)
+    .sort((a, b) => b.episodeCount - a.episodeCount);
+  const gagList = (slim ? gagsSorted.slice(0, 12) : gagsSorted)
     .map((g) => `- ${g.name} (${g.episodeCount} Folgen): ${g.description}`)
     .join("\n");
 
   const w = stats.winners || {};
   const winners = `Stand der Punktetabelle: Jochen ${w.jochen || 0}, Etienne ${w.etienne || 0}, Georg ${w.georg || 0}.`;
+
+  const folgenSection = slim
+    ? `FOLGEN: Es gibt ${stats.episodeCount} Folgen. Der vollständige Titel-Index ist hier nicht eingebettet – wenn du eine genaue Folgennummer nicht sicher kennst, verweise auf die Suche unter /folgen.`
+    : `FOLGEN-INDEX (Auszug der Titel):\n${episodes.map((e) => `#${e.number} ${e.title}`).join("\n")}`;
+
+  const folgenRule = slim
+    ? "- Nenne Folgennummern nur, wenn du dir sicher bist. Erfinde keine Nummern/Titel; im Zweifel auf die Suche unter /folgen verweisen."
+    : '- Wenn du eine konkrete Folgennummer/Titel kennst, nenne sie (z.B. "siehe Folge #100 Dreistellig").';
 
   return `Du bist der freundliche Wiki-Assistent von "das worn" – dem Wiki Ohne Richtigen Namen zum Podcast ohne richtigen Namen mit Etienne Gardé, Jochen Dominicus und Georg Zaal. Antworte auf Deutsch, locker und prägnant.
 
@@ -43,17 +51,17 @@ ZAHLEN:
 WIEDERKEHRENDE THEMEN:
 ${gagList}
 
-FOLGEN-INDEX (Auszug der Titel):
-${epList}
+${folgenSection}
 
 REGELN:
-- Wenn du eine konkrete Folgennummer/Titel kennst, nenne sie (z.B. "siehe Folge #100 Dreistellig").
+${folgenRule}
 - Wenn du etwas nicht sicher weißt, sag es offen. Erfinde keine Rätselauflösungen.
 - Halte Antworten kurz: meist 1-3 Sätze, mehr nur auf Nachfrage.
 - Pommes-Witze sind erlaubt.`;
 }
 
 const SYSTEM = buildSystemPrompt();
+const SYSTEM_SLIM = buildSystemPrompt({ slim: true });
 
 async function runModel(env, modelId, messages) {
   return await env.AI.run(modelId, {
@@ -63,11 +71,42 @@ async function runModel(env, modelId, messages) {
   });
 }
 
+// Self-hosted alternative (node1 migration): talk to an Ollama server instead
+// of Workers AI. Activated by the OLLAMA_URL env var. Reads process.env first
+// (Node/systemd), falls back to Hono bindings (c.env) — so the same file works
+// both on Cloudflare Workers and on the Node deployment.
+function getOllama(c) {
+  const penv = (typeof process !== "undefined" && process.env) ? process.env : {};
+  const url = penv.OLLAMA_URL || c.env?.OLLAMA_URL;
+  if (!url) return null;
+  return {
+    url: url.replace(/\/$/, ""),
+    model: penv.OLLAMA_MODEL || c.env?.OLLAMA_MODEL || "llama3.1:8b",
+  };
+}
+
+async function runOllama(ollama, messages) {
+  const r = await fetch(`${ollama.url}/api/chat`, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      model: ollama.model,
+      messages: [{ role: "system", content: SYSTEM_SLIM }, ...messages],
+      stream: false,
+      options: { temperature: 0.7, num_predict: 350 },
+    }),
+  });
+  if (!r.ok) throw new Error(`Ollama ${r.status}`);
+  const j = await r.json();
+  return { response: (j?.message?.content || "").trim() };
+}
+
 export async function handleChat(c) {
   const env = c.env;
-  if (!env?.AI) {
+  const ollama = getOllama(c);
+  if (!env?.AI && !ollama) {
     return c.json({
-      error: "Chat ist gerade deaktiviert – Workers AI ist nicht gebunden. Stelle sicher, dass [ai] binding=\"AI\" in wrangler.toml steht.",
+      error: "Chat ist gerade deaktiviert – weder Workers AI (env.AI) noch OLLAMA_URL ist gesetzt.",
     }, 503);
   }
 
@@ -95,15 +134,25 @@ export async function handleChat(c) {
   }
 
   let result;
-  let usedModel = MODEL;
-  try {
-    result = await runModel(env, MODEL, messages);
-  } catch (e) {
+  let usedModel;
+  if (ollama) {
+    usedModel = ollama.model;
     try {
-      result = await runModel(env, FALLBACK_MODEL, messages);
-      usedModel = FALLBACK_MODEL;
-    } catch (e2) {
-      return c.json({ error: "Workers AI Fehler", detail: String(e2).slice(0, 200) }, 502);
+      result = await runOllama(ollama, messages);
+    } catch (e) {
+      return c.json({ error: "Ollama Fehler", detail: String(e).slice(0, 200) }, 502);
+    }
+  } else {
+    usedModel = MODEL;
+    try {
+      result = await runModel(env, MODEL, messages);
+    } catch (e) {
+      try {
+        result = await runModel(env, FALLBACK_MODEL, messages);
+        usedModel = FALLBACK_MODEL;
+      } catch (e2) {
+        return c.json({ error: "Workers AI Fehler", detail: String(e2).slice(0, 200) }, 502);
+      }
     }
   }
 
