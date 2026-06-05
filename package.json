@@ -7,15 +7,19 @@
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
     "extract:raetsel": "node scripts/extract-raetsel.mjs",
+    "build:node": "esbuild src/node-server.js --bundle --platform=node --format=esm --outfile=dist/server.mjs",
+    "start:node": "node dist/server.mjs",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "start": "wrangler dev"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20251001.0",
+    "esbuild": "^0.24.0",
     "wrangler": "^3.95.0"
   },
   "dependencies": {
+    "@hono/node-server": "^1.13.0",
     "hono": "^4.6.0"
   }
 }
