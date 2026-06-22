@@ -1010,8 +1010,8 @@
     ],
     "host": "georg",
     "key": "kaercher",
-    "episodeCount": 37,
-    "totalMentions": 109,
+    "episodeCount": 39,
+    "totalMentions": 114,
     "episodes": [
       {
         "number": 28,
@@ -1197,6 +1197,16 @@
         "number": 354,
         "title": "Die Kongruenz schläft nicht",
         "mentions": 2
+      },
+      {
+        "number": 365,
+        "title": "Ich wohnte früher im Wald",
+        "mentions": 1
+      },
+      {
+        "number": 366,
+        "title": "Chantal aus der 7e",
+        "mentions": 4
       }
     ]
   },
@@ -1209,8 +1219,8 @@
     "dedicatedEpisodes": [],
     "host": "etienne",
     "key": "tiefkuehlpommes",
-    "episodeCount": 269,
-    "totalMentions": 472,
+    "episodeCount": 272,
+    "totalMentions": 475,
     "episodes": [
       {
         "number": 23,
@@ -2556,6 +2566,21 @@
         "number": 362,
         "title": "Gerangel im Checkers",
         "mentions": 2
+      },
+      {
+        "number": 364,
+        "title": "Fotos mit Barbara Schöneberger",
+        "mentions": 1
+      },
+      {
+        "number": 365,
+        "title": "Ich wohnte früher im Wald",
+        "mentions": 1
+      },
+      {
+        "number": 366,
+        "title": "Chantal aus der 7e",
+        "mentions": 1
       }
     ]
   }

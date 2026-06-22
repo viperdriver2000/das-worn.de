@@ -1,34 +1,34 @@
 {
-  "episodeCount": 363,
+  "episodeCount": 366,
   "skippedRaetselCount": 0,
-  "totalWords": 5205471,
-  "totalChars": 30521961,
-  "avgWords": 14340,
+  "totalWords": 5246506,
+  "totalChars": 30761784,
+  "avgWords": 14335,
   "winners": {
     "etienne": 163,
     "jochen": 123,
     "georg": 19,
-    "unknown": 71,
+    "unknown": 74,
     "beidenEpisodes": 12,
-    "riddleCount": 380
+    "riddleCount": 383
   },
   "totalMentions": {
-    "etienne": 3426,
-    "jochen": 6337,
-    "georg": 3785
+    "etienne": 3449,
+    "jochen": 6385,
+    "georg": 3805
   },
   "topGlobal": [
     {
       "word": "diese",
-      "count": 8733
+      "count": 8803
     },
     {
       "word": "jochen",
-      "count": 5359
+      "count": 5396
     },
     {
       "word": "zwei",
-      "count": 4635
+      "count": 4681
     },
     {
       "word": "podcast",
@@ -36,15 +36,15 @@
     },
     {
       "word": "dieser",
-      "count": 2335
+      "count": 2373
     },
     {
       "word": "dieses",
-      "count": 2111
+      "count": 2170
     },
     {
       "word": "drei",
-      "count": 2027
+      "count": 2043
     },
     {
       "word": "ahnung",
@@ -64,7 +64,7 @@
     },
     {
       "word": "anderen",
-      "count": 1529
+      "count": 1540
     },
     {
       "word": "moment",
@@ -72,7 +72,7 @@
     },
     {
       "word": "diesen",
-      "count": 953
+      "count": 969
     },
     {
       "word": "namen",
@@ -88,7 +88,7 @@
     },
     {
       "word": "dran",
-      "count": 841
+      "count": 853
     },
     {
       "word": "hund",
@@ -100,7 +100,7 @@
     },
     {
       "word": "andere",
-      "count": 667
+      "count": 692
     },
     {
       "word": "frau",
@@ -131,12 +131,12 @@
       "count": 510
     },
     {
-      "word": "erstmal",
-      "count": 471
+      "word": "davon",
+      "count": 479
     },
     {
-      "word": "idee",
-      "count": 466
+      "word": "erstmal",
+      "count": 471
     }
   ],
   "longest": [
@@ -249,20 +249,20 @@
   ],
   "totalFun": {
     "haha": 29,
-    "quatsch": 772,
-    "cool": 1413,
-    "geil": 4052,
-    "krass": 898,
+    "quatsch": 780,
+    "cool": 1434,
+    "geil": 4105,
+    "krass": 916,
     "digga": 26,
-    "alter": 1741,
-    "scheisse": 3231,
-    "leute": 9377,
-    "tschuess": 867,
-    "podcast": 6155,
+    "alter": 1752,
+    "scheisse": 3257,
+    "leute": 9456,
+    "tschuess": 875,
+    "podcast": 6179,
     "pommes": 378,
     "nettetal": 4,
     "lobberich": 119,
     "nordfriese": 2
   },
-  "estimatedHours": 667
+  "estimatedHours": 673
 }
