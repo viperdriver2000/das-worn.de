@@ -6499,6 +6499,16 @@
     "_beidenCount": 0,
     "_riddleCount": 1
   },
+  "363": {
+    "winner": "etienne",
+    "question": "Was ist das Besondere an der Farbe Eigengrau?",
+    "answer": "Die Farbe, die man sieht, wenn man die Augen schließt und völlige Dunkelheit herrscht – nicht reflektiertes Licht, das heller wirkt als reines Schwarz.",
+    "skipped": false,
+    "notes": "Georg stellt das Rätsel, Etienne löst es korrekt. Georg bestätigt mit 'Richtig? Das ist die Lösung? Ja.' Eigengrau ist die Farbe ohne äußeres Licht, die man mit geschlossenen Augen wahrnimmt.",
+    "_auto": true,
+    "_confidence": "high",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "364": {
     "winner": "etienne",
     "question": "Was war ungewöhnlich an Operation Cottage 1943, die die Alliierten über 300 Mann kostete?",

@@ -1,4 +1,35 @@
 {
+  "1": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Podcast mit Gaming & Quiz-Formaten",
+        "summary": "Ein regelmäßiger Drei-Personen-Podcast mit verschiedenen Segmenten: Spiele-Erkennungsspiele, Haustier-Geschichten, ein Quiz-Spiel-Format namens 'Der googelt, kriegt aufs Maul' und Geheimtipp-Spiele-Empfehlungen.",
+        "originator": null,
+        "viability": "halbernst",
+        "category": "Service"
+      },
+      {
+        "name": "Tote Tiere Podcast-Rubruik",
+        "summary": "Ein wöchentliches Podcast-Segment, in dem jeder Host eine Geschichte über ein verstorbenes Haustier aus seiner Vergangenheit erzählt, dargestellt als Marktlücke.",
+        "originator": null,
+        "viability": "quatsch",
+        "category": "Service"
+      }
+    ],
+    "notes": "Der Podcast selbst ist die primäre, konkret umgesetzte Idee (Folge 1 wurde aufgenommen). Die 'Tote Tiere'-Idee ist humorvoller Quatsch. Initiator unklar, da Gemeinschaftsprojekt aller drei (Etienne, Jochen, Georg). Podcast hat noch keinen Namen.",
+    "episodeNumber": 1,
+    "episodeTitle": "Katzen und Bitcoins",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "2": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Transkript enthält keine echten Geschäfts-/Start-up-Ideen. Der Hinweis auf einen zukünftigen Podcast-Partner ist zu vage. Die Erwähnung eines 'Spin-Off-Podcasts mit Brillenfakten' ist humorvoll gemeint, wird aber nicht ernsthaft als Geschäftskonzept diskutiert. Der Rest sind Unterhaltungen über Fußball, Gaming-Sammlungen, historische Anekdoten und persönliche Erlebnisse.",
+    "episodeNumber": 2,
+    "episodeTitle": "Videobeweis",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "3": {
     "hasIdea": true,
     "ideas": [
@@ -29,6 +60,14 @@
     "notes": "Etienne entwickelt die Idee aus der Beobachtung heraus, dass es einen Markt für Prepper-Kurse gibt und Zombie-Serien populär sind. Sie diskutieren sie spielerisch, aber mit echtem Interesse - erwähnen dabei, bereits ähnliche Inhalte bei einem anderen Projekt gemacht zu haben. Jochen signalisiert Zustimmung ('Ja, dann schauen wir mal, was wir so für Aufrufe generieren').",
     "episodeNumber": 4,
     "episodeTitle": "Kartentricks",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "5": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Das Transkript enthält hauptsächlich persönliche Anekdoten (Konfrontationen, E3-Reisen, Hunde-Geschichten) und ein Trivia-Rätsel über Tillingdale (bestehende Geschäftsidee von Michael O'Leary). Der Fallout-Stream wird als Marketing-Kampagne diskutiert, nicht als neue Geschäftsidee. Keine substantielle Diskussion einer echten, neuen Geschäfts-/Start-up-Idee erkennbar.",
+    "episodeNumber": 5,
+    "episodeTitle": "Beef mit dem Paketboten",
     "_model": "claude-haiku-4-5-20251001"
   },
   "6": {
@@ -86,6 +125,22 @@
     "episodeTitle": "Nackparty auf dem Klo",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "10": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Live-Faktenchecking in Politikdebatten",
+        "summary": "Ein TV-Format (ähnlich wie Hart aber fair), bei dem live zehn Leute die Aussagen von Politikern während der Sendung recherchieren und live Fehler/Lügen korrigieren.",
+        "originator": "etienne",
+        "viability": "halbernst",
+        "category": "Service"
+      }
+    ],
+    "notes": "Etienne nennt es eine 'geile Idee', räumt aber ein, dass danach wahrscheinlich wenige Gäste noch in die Sendung kommen würden. Ansonsten überwiegend persönliche Geschichten und humorvolle Diskussionen (Seile, Rauchmelder, Katzen), aber keine echten Geschäftsideen.",
+    "episodeNumber": 10,
+    "episodeTitle": "Mordserie",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "11": {
     "hasIdea": false,
     "ideas": [],
@@ -102,12 +157,52 @@
     "episodeTitle": "\"günstiger\" Schlüsseldienst",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "13": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Jucken und Kratzen Salon",
+        "summary": "Ein Service-Salon, in dem Profis Kunden den Rücken kratzen. Simon soll die Idee ursprünglich gehabt haben; die Hosts diskutieren, dass man damit möglicherweise mehr verdienen könnte als mit Bitcoins.",
+        "originator": null,
+        "viability": "halbernst",
+        "category": "Service"
+      }
+    ],
+    "notes": "Die Idee wird als Simon-Plan erwähnt und humorvoll, aber mit gewisser Ernsthaftigkeit diskutiert. Ansonsten hauptsächlich Anekdoten und Gamescom-Geschichten ohne Geschäftsideen.",
+    "episodeNumber": 13,
+    "episodeTitle": "Die Geschichte des Jahres",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "14": {
     "hasIdea": false,
     "ideas": [],
     "notes": "In dieser Folge werden hauptsächlich persönliche Erfahrungen (Massage, Autofahrten), existierende Services (Valley Parking, Watch Together, Jerks-Serie, Airbnb) sowie humorvolle Gedankenspiele diskutiert. Der Spoiler-Twitter-Account wird nur als Scherz erwähnt, ohne ernsthafte Diskussion. Es gibt keine konkrete Geschäfts-/Start-up-Idee, die die Hosts ernsthaft behandeln.",
     "episodeNumber": 14,
     "episodeTitle": "Curling",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "15": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Keine echten Geschäfts-/Start-up-Ideen. Das Transkript besteht hauptsächlich aus persönlichen Anekdoten (Urlaub, Behördengänge, VR-Unfälle mit der Mutter, Statistenrollen in Serien), theoretischen Diskussionen über VR-Sicherheit und psychologische Auswirkungen sowie einem Rätselspiel. Golf in VR wird nur vage erwähnt, nicht ernsthaft entwickelt.",
+    "episodeNumber": 15,
+    "episodeTitle": "Taxi",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "16": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Patreon-Finanzierung für Podcast",
+        "summary": "Launch einer Patreon-Seite (patreon.com/podcast-ohne-name) zur freiwilligen Unterstützung des Podcasts durch Zuhörer. Einnahmen sollen für bessere Ausrüstung und evtl. als Nebeneinkommen genutzt werden.",
+        "originator": "etienne",
+        "viability": "ernsthaft",
+        "category": "Service"
+      }
+    ],
+    "notes": "Konkret diskutiert und bereits umgesetzt. Klötenföhnkabinen werden erwähnt, sind aber klar als Witz gemeint und nicht ernsthaft gemeint.",
+    "episodeNumber": 16,
+    "episodeTitle": "Geheime Botschaften in Podcastuntertiteln!",
     "_model": "claude-haiku-4-5-20251001"
   },
   "17": {
@@ -124,6 +219,14 @@
     "notes": "Folge behandelt hauptsächlich persönliche Reflexionen (Etienne wird 40, Midlife-Crisis), wissenschaftliche Themen (Oumuamua), Erziehungsfragen und ein Rätsel. Der kurze Hinweis auf mögliche Live-Auftritte wird nicht als echte Geschäftsidee ernsthaft diskutiert. Stand-Up-Komödie wird erwähnt, aber als persönlicher Traum, nicht als konkrete Geschäftsidee.",
     "episodeNumber": 18,
     "episodeTitle": "Krank und im Bett",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "19": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Das Transkript besteht hauptsächlich aus Nostalgie über GIGA, Diskussionen über Videospiele, persönlichen Anekdoten (Fahrradkonflikt, Gänse-Einkauf, Arztbesuch) und einem Rätsel. Die einzige geschäftliche Komponente ist die Diskussion über ihr eigenes Patreon-Modell für ihren bestehenden Podcast – keine neue externe Geschäftsidee mit Substanz.",
+    "episodeNumber": 19,
+    "episodeTitle": "Fahrradfahrer",
     "_model": "claude-haiku-4-5-20251001"
   },
   "20": {
@@ -1883,6 +1986,22 @@
     "episodeTitle": "Das Freitagabendprogramm",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "146": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Hundeduschgel mit Duftaromen",
+        "summary": "Spezielles Duschgel für Hunde mit Aromen von Düften, die Hunde lieben (z.B. verfaulter Vogel, Erdkröte, Erdhügel), um ihre Geruchsidentität nach dem Duschen zu bewahren und das Wohlbefinden zu erhöhen.",
+        "originator": "etienne",
+        "viability": "halbernst",
+        "category": "Produkt"
+      }
+    ],
+    "notes": "Etienne identifiziert eine echte Marktlücke und beschreibt das Konzept konkret basierend auf Hundebiologie. Das DIN-Rating-System für Kinder ist reine Satire ohne Substanz und wird nicht verfolgt.",
+    "episodeNumber": 146,
+    "episodeTitle": "Wasserrutschenrekord 8,90 sec",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "147": {
     "hasIdea": true,
     "ideas": [
@@ -2350,6 +2469,14 @@
     "episodeTitle": "Der charmante Proktologe",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "181": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Die Episode enthält keine ernsthaften Geschäfts- oder Start-up-Ideen. Die Hosts diskutieren hauptsächlich humorvoll über alltägliche Phänomene (Grillen im Urlaub, Trockentoiletten in einem bestehenden Ökodorf), bestehende Produkte (Minecraft-Brettspiel, Laminiergeräte) und geben persönliche Ratschläge zu etablierten Themen. Es handelt sich um einen Freizeit-Podcast ohne substantielle unternehmerische Inhalte.",
+    "episodeNumber": 181,
+    "episodeTitle": "Essig im Periodensystem",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "182": {
     "hasIdea": false,
     "ideas": [],
@@ -2411,6 +2538,14 @@
     "notes": "Stullenmeister ist die einzige konkrete Geschäftsidee, die ernsthaft diskutiert wird. Die Idee mit selbstgemachter Mayonnaise wird nur im Kontext von Pop-Trends erwähnt, nicht als echte Geschäftsidee. Der Rest des Transkripts enthält persönliche Anekdoten und Diskussionen ohne Substanz als Geschäftsideen.",
     "episodeNumber": 186,
     "episodeTitle": "Die Wunder-Mayonnaise",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "187": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Die Folge enthält viel Humor und Spekulationen (Private Fotografen bei roten Teppichen, Space-Clubs im Weltraum, Fußballstadium-Eindringen mit Leiter), aber keine ernsthaften Geschäfts-/Start-up-Ideen. Die einzige substanzielle Idee ist das 'Tabu-Rätsel-Format' von Hörer Mike, das aber eher eine Variation des eigenen Podcast-Formates darstellt, nicht eine neue Geschäftsidee. Der Großteil der Folge besteht aus Unterhaltung, Diskussionen über Berufe, Streaming-Serien, Nostalgie und einer Rätsel-Runde.",
+    "episodeNumber": 187,
+    "episodeTitle": "Promipartys stürmen",
     "_model": "claude-haiku-4-5-20251001"
   },
   "188": {
@@ -2610,6 +2745,37 @@
     "episodeTitle": "Die Küken-Kanone",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "203": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Keine echten Geschäfts- oder Start-up-Ideen identifiziert. Das Transkript besteht hauptsächlich aus Anekdoten (Helge Schneider, Taxifahrer, Elektriker), Produktbewertungen (Funkklingel, Reiskocher), Diskussionen über Promis und Filme sowie Hörer-Fragen. Die einzige ansatzweise konzeptionelle Diskussion ist ein theoretisches TV-Format 'Promitausch', wird aber zu humorvoll und oberflächlich behandelt.",
+    "episodeNumber": 203,
+    "episodeTitle": "\"Hallo? Hier Helge Schneider..\"",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "204": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Amateurvereins-Fußball Live-Streaming",
+        "summary": "Ein Live-Streaming-Service für Amateurliga-Fußballspiele (wie FC Lobberich) auf Twitch mit technischer Unterstützung und Broadcasting-Equipment; Hosts suchen aktiv nach weiteren Vereinen zur Erweiterung.",
+        "originator": "georg",
+        "viability": "ernsthaft",
+        "category": "Service"
+      },
+      {
+        "name": "Spülmaschinen-System für große Behälter",
+        "summary": "Eine Geschirrspülmaschine oder ein Aufsatz-Design, das speziell große Töpfe und Schüsseln effizient spülen kann, ohne den Wasserfluss zu blockieren.",
+        "originator": "georg",
+        "viability": "halbernst",
+        "category": "Produkt"
+      }
+    ],
+    "notes": "Das FC Lobberich Streaming wurde bereits mit Hörer-Beteiligung und Kooperationspartnern durchgeführt. Die Geschirrspülmaschinen-Idee wird bewusst als Podcast-Idee deklariert.",
+    "episodeNumber": 204,
+    "episodeTitle": "Bundeskanzler Gardé",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "205": {
     "hasIdea": true,
     "ideas": [
@@ -2680,6 +2846,22 @@
     "episodeTitle": "Urknall - einfach erklärt",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "210": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Personal Trainer für normale Menschen",
+        "summary": "Ein Personal-Training-Service mit Trainern, die nicht wie Fitness-Models aussehen, sondern durchschnittlich wirken, um Anfängern zu zeigen, dass Erfolg erreichbar ist und psychologische Barrieren abzubauen.",
+        "originator": "georg",
+        "viability": "halbernst",
+        "category": "Service"
+      }
+    ],
+    "notes": "Georg beobachtet lokale Personal Trainer mit 'Optimierungsspielraum' und stellt fest, dass deren unperfektes Aussehen ein Vorteil sein könnte. Jochen bestätigt: 'Das ist bestimmt eine gute Idee. Ein Personal Trainer, der aussieht wie ein Vorbild und nicht wie ein Nachher-Bild.'",
+    "episodeNumber": 210,
+    "episodeTitle": "Die Eltern-Trainer",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "211": {
     "hasIdea": true,
     "ideas": [
@@ -2710,6 +2892,29 @@
     "notes": "Jochen stellt die Idee explizit als praktische Erfindung dar ('womit sich bestimmt Geld machen lässt'), aber Kontext und Diskussion sind humorvoll gemeint (Szenario: Frau kommt nach Hause, schnell Pornoseite schließen). Rest der Folge besteht aus persönlichen Anekdoten, Kochtipps und Trivial-Fragen. Keine weiteren echten Geschäftsideen identifiziert.",
     "episodeNumber": 212,
     "episodeTitle": "Umzug",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "213": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Garagenverkauf/Flohmarkt Streaming Service",
+        "summary": "Ein Online-Streaming-Service für Garagenverkäufe und Flohmärkte, um Verkäufer mit potenziellen Käufern online zu verbinden. Georg hat nach seinem Umzug konkret viele Kartons und Kabel, die auf diese Weise verkauft werden könnten.",
+        "originator": null,
+        "viability": "halbernst",
+        "category": "Service"
+      },
+      {
+        "name": "Anti-Influencer / Negative-Influencer Service",
+        "summary": "Ein Service, bei dem man Influencer bezahlt, um systematisch berechtigte negative Kritik an Produkten zu veröffentlichen (Beispiel: PlayStation 5 gegenüber Xbox). Nutzt die Beobachtung, dass negative Bewertungen großen Einfluss haben.",
+        "originator": "etienne",
+        "viability": "halbernst",
+        "category": "Service"
+      }
+    ],
+    "notes": "Beide werden halbernst als Geschäftskonzepte diskutiert. Bei der Garagenverkauf-Idee wird sie als 'wieder unsere Idee' präsentiert, Ursprung unklar. Anti-Influencer-Idee wird als noch unerschlossene 'Marktlücke' dargestellt, mit Bedenken zur Legalität.",
+    "episodeNumber": 213,
+    "episodeTitle": "Bahnfahren",
     "_model": "claude-haiku-4-5-20251001"
   },
   "214": {
@@ -2972,6 +3177,22 @@
     "notes": "Während der Hochzeits-Anekdote wird eine mögliche Marktlücke diskutiert. Die Hosts erwähnen bereits existierende Anhänger-Lösungen, spekulieren aber, ob es noch attraktivere Mittelklasse-Optionen geben könnte. Keine konkrete Gründungsabsicht, aber substantielle geschäftliche Überlegungen.",
     "episodeNumber": 232,
     "episodeTitle": "Edel-Frettchen-Futterhändler",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "233": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Streaming-Tennishalle",
+        "summary": "Eine Tennishalle mit fest montierten Kameras, wo Spieler kostenlos spielen können während ihre Spiele live gestreamt und kommentiert werden. Optional mit bekannten Sportlern und Turnierformaten zur Zuschauer-Gewinnung.",
+        "originator": "etienne",
+        "viability": "halbernst",
+        "category": "Service"
+      }
+    ],
+    "notes": "Die Idee entstand im Kontext der Lobberich-Streaming-Diskussion (ehemaliger Fußballverein-Livestream). Etienne präsentiert es als Geschäftsmodell: 'Wir machen selber eine Tennishalle auf, in der die Kameras fest montiert sind und du kannst gratis auf dem Platz spielen, wenn wir das streamen und kommentieren dürfen.' Die Hosts diskutieren konkrete Aspekte wie Kamera-Ausrüstung, Kommentar-Besetzung, und erwägen Alternativen wie Hallenfußballturniere. Ernsthaft genug trotz humorvollem Tons.",
+    "episodeNumber": 233,
+    "episodeTitle": "Urlaubsmitbringsel-Dings",
     "_model": "claude-haiku-4-5-20251001"
   },
   "234": {
@@ -4658,6 +4879,30 @@
     "notes": "Das Transkript enthält nur humorvolle Gedankenspiele und Witze ohne substanzielle Geschäftsideen. Das 'Pissbügeleisen' ist ein offensichtlicher Scherz. Andere Erwähnungen sind historische Anekdoten zu alten Markenregistrierungen (RBTV, Super Games TV, BAM TV) oder Meta-Diskussionen über ihre Podcast-Kultur. Keine ernsthaften, konkreten Geschäfts-/Start-up-Ideen.",
     "episodeNumber": 361,
     "episodeTitle": "Tennis",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "362": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "KI-Dating-Agent",
+        "summary": "Eine KI-basierte App, die sich im Namen des Nutzers auf Dating-Plattformen anmeldet, Chats führt und Dates arrangiert. Der Nutzer muss sich nur anmelden und wird benachrichtigt, wenn ein Match gefunden wurde.",
+        "originator": "jochen",
+        "viability": "halbernst",
+        "category": "App/Software"
+      }
+    ],
+    "notes": "Jochen präsentiert dies als 'fantastische Idee, mit der wir reich werden können'. Die Hosts diskutieren das Konzept ernsthaft, es gibt aber auch Kritik (z.B. dass der erste Kontakt mit einer KI stattfindet und nicht mit dem echten Menschen). Keine anderen substanziellen Business-Ideen in dieser Folge gefunden.",
+    "episodeNumber": 362,
+    "episodeTitle": "Gerangel im Checkers",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "363": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Die Folge behandelt hauptsächlich persönliche Anekdoten (Sport, Dänemark-Trip, Legoland) und diskutiert bestehende Geschäftsmodelle kritisch (Free Cash App, Audioflick.de). Eine vage erwähnte Idee für Medienkompetenz-Schulungen an Schulen wird ohne ernsthafte Diskussion als Gedankenspiel abgetan. Das Wiki am Ende listet zwar 49 frühere Business-Ideen auf, die werden aber nicht neu in dieser Folge entwickelt.",
+    "episodeNumber": 363,
+    "episodeTitle": "Free Cash",
     "_model": "claude-haiku-4-5-20251001"
   },
   "364": {
