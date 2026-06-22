@@ -4659,5 +4659,51 @@
     "episodeNumber": 361,
     "episodeTitle": "Tennis",
     "_model": "claude-haiku-4-5-20251001"
+  },
+  "364": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Die Folge besteht hauptsächlich aus Smalltalk (Geburtstage, Alter), persönlichen Anekdoten (ukrainischer Mann am Flohmarkt, verliehene DVDs), ausgiebigen nostalgischen Rückblicken auf die GIGA-Ära und Patreon-Q&A-Fragen zu Alltags-Themen. Eine vage Erwähnung eines WM-Specials existiert, ist aber nicht konkret und kein neues Geschäftskonzept, sondern nur ein Programmformat für den bestehenden Podcast. Keine echten Geschäfts-/Start-up-Ideen identifiziert.",
+    "episodeNumber": 364,
+    "episodeTitle": "Fotos mit Barbara Schöneberger",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "365": {
+    "hasIdea": false,
+    "ideas": [],
+    "notes": "Das Transkript enthält keine echten Geschäfts-/Start-up-Ideen. Die Hosts diskutieren persönliche Hobbys (Billard, Fitness), empfehlen bestehende Content-Creator (Fernan Sainz – Window Tinting), teilen Filmtrivia und persönliche Pläne (Motorradführerschein), aber keine konkreten neuen Geschäftsideen mit Substanz.",
+    "episodeNumber": 365,
+    "episodeTitle": "Ich wohnte früher im Wald",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "366": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Werbekissen",
+        "summary": "Ein intelligentes Kissen, das nachts Werbebotschaften ins Ohr flüstert (z.B. NordVPN). Der Nutzer verdient Geld dafür, dass er auf dem Kissen schläft – funktioniert als umgekehrter Adblocker.",
+        "originator": "etienne",
+        "viability": "halbernst",
+        "category": "Produkt"
+      },
+      {
+        "name": "Pornpillow",
+        "summary": "Speziell entwickeltes Erwachsenen-Kissen mit patentierter biochemischer Formel zur Steigerung von Sexträumen. Vermarktung über Influencer-Testimonials mit Claim 'bis zu 10% mehr Sexträume'.",
+        "originator": "georg",
+        "viability": "halbernst",
+        "category": "Produkt"
+      },
+      {
+        "name": "Nachtlieferdienst mit Werbekissen-Integration",
+        "summary": "Das Werbekissen macht nachts Produktvorschläge an den Schläfer, dieser bestellt per Knopfdruck; Lieferdienst bringt das Produkt noch in der Nacht (z.B. Müller-Joghurt).",
+        "originator": "georg",
+        "viability": "halbernst",
+        "category": "Service"
+      }
+    ],
+    "notes": "Alle drei Ideen werden mit humorvollem Ton, aber durchaus konzeptioneller Substanz entwickelt. Besonders beim Pornpillow: detaillierte Marketing-Strategie (Rechts-Claim 'bis zu 10%'), Influencer-Testimonials, Parallelen zur Shampoo-Industrie und postfaktischem Marketing.",
+    "episodeNumber": 366,
+    "episodeTitle": "Chantal aus der 7e",
+    "_model": "claude-haiku-4-5-20251001"
   }
 }

@@ -6499,5 +6499,35 @@
     "_beidenCount": 0,
     "_riddleCount": 1
   },
+  "364": {
+    "winner": "etienne",
+    "question": "Was war ungewöhnlich an Operation Cottage 1943, die die Alliierten über 300 Mann kostete?",
+    "answer": "Es gab keinen Gegner; die Japaner hatten die Insel Kiska bereits zwei Wochen zuvor evakuiert. Die über 300 Todesfälle entstanden durch Eigenbeschuss, Unfälle und Minen.",
+    "skipped": false,
+    "notes": "Georg bestätigte Etienne's Lösung explizit mit 'Das ist richtig'. Etienne löste das längere Rätsel am Ende durch die Kernfrage 'Es waren gar keine Japaner da?'",
+    "_auto": true,
+    "_confidence": "high",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "365": {
+    "winner": "jochen",
+    "question": "Was war ungewöhnlich am Bodyguard, der am Set von Predator für Sonny Landham engagiert wurde?",
+    "answer": "Der Bodyguard war nicht dazu da, Sonny Landham zu schützen, sondern die anderen Menschen vor Sonny zu schützen, da dieser für seine Wutausbrüche bekannt war. Nur unter dieser Auflage fand sich eine Versicherungsfirma für die Filmproduktion.",
+    "skipped": false,
+    "notes": "Georg bestätigt Jochens Antwort explizit mit '100% richtig'. Etienne ist hinterher skeptisch und fragt, wie Jochen darauf gekommen ist, da keine direkten Hinweise darauf hingedeutet hätten.",
+    "_auto": true,
+    "_confidence": "high",
+    "_model": "claude-haiku-4-5-20251001"
+  },
+  "366": {
+    "winner": "jochen",
+    "question": "Welche Besonderheit hatte der Tyrrell P34 Formel-1-Wagen aus den 1970ern?",
+    "answer": "Der Tyrrell P34 hatte sechs Räder: vier schmale Vorderreifen und zwei normale Hinterreifen zur Optimierung der Aerodynamik.",
+    "skipped": false,
+    "notes": "Jochen gibt die finale Antwort 'Es sind vier schmale Vorderreifen', die Georg durch Erklärung der vollständigen Lösung bestätigt. Keine explizite Punktvergabe im üblichen Format ('Punkt für dich' etc.), aber Jochens Antwort wird akzeptiert.",
+    "_auto": true,
+    "_confidence": "medium",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "_comment": "Manuelle Annotationen für Rätsel-Sieger. Key = Folgennummer. Override-Felder: winner (etienne|jochen|georg|null), question (string), answer (string), skipped (bool für Folgen ohne Rätsel), notes (string)."
 }
