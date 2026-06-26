@@ -1010,8 +1010,8 @@
     ],
     "host": "georg",
     "key": "kaercher",
-    "episodeCount": 39,
-    "totalMentions": 114,
+    "episodeCount": 40,
+    "totalMentions": 116,
     "episodes": [
       {
         "number": 28,
@@ -1207,6 +1207,11 @@
         "number": 366,
         "title": "Chantal aus der 7e",
         "mentions": 4
+      },
+      {
+        "number": 367,
+        "title": "Brot und Salz",
+        "mentions": 2
       }
     ]
   },

@@ -4950,5 +4950,21 @@
     "episodeNumber": 366,
     "episodeTitle": "Chantal aus der 7e",
     "_model": "claude-haiku-4-5-20251001"
+  },
+  "367": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Autokaufhilfs-Agentur",
+        "summary": "Eine Beratungsagentur, die Menschen beim Autokauf unterstützt und Provisionen erhält. Ziel: Menschen wie Etienne vor der Überforderung beim Autokauf bewahren und seriöse Alternativen zu unseriösen Händlern bieten.",
+        "originator": "etienne",
+        "viability": "halbernst",
+        "category": "Service"
+      }
+    ],
+    "notes": "Etienne schlägt die Idee vor, Georg weist darauf hin, dass es ähnliche Services (Auto-Abo, Leasing) bereits gibt. Die Hosts sehen Potenzial, aber auch, dass bereits konkurrierende Lösungen am Markt sind.",
+    "episodeNumber": 367,
+    "episodeTitle": "Brot und Salz",
+    "_model": "claude-haiku-4-5-20251001"
   }
 }

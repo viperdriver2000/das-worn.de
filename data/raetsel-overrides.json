@@ -6539,5 +6539,15 @@
     "_confidence": "medium",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "367": {
+    "winner": "jochen",
+    "question": "Warum verklagte ein New Yorker im Jahr 2020 mehrere pornografische Webseiten?",
+    "answer": "Der Mann war taub/gehörlos und forderte, dass die Videos Untertitel haben müssen, da dies nach dem Americans with Disabilities Act erforderlich sein sollte, um Behinderten gleichen Zugang zu ermöglichen.",
+    "skipped": false,
+    "notes": "Jochen löste das Rätsel mit der korrekten Antwort 'Er ist taub und möchte gerne Untertitel haben'. Georg bestätigte sofort '100% richtig'.",
+    "_auto": true,
+    "_confidence": "high",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "_comment": "Manuelle Annotationen für Rätsel-Sieger. Key = Folgennummer. Override-Felder: winner (etienne|jochen|georg|null), question (string), answer (string), skipped (bool für Folgen ohne Rätsel), notes (string)."
 }
