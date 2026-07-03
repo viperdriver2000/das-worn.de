@@ -6549,5 +6549,15 @@
     "_confidence": "high",
     "_model": "claude-haiku-4-5-20251001"
   },
+  "368": {
+    "winner": "jochen",
+    "question": "Was ist das Besondere an der Death Metal Band Hatebeak?",
+    "answer": "Ein Graupapagei ist Bandmitglied und singt in der Death-Metal-Band Hatebeak. Das Debütalbum heißt 'Number of the Beak'.",
+    "skipped": false,
+    "notes": "Jochen löst das Rätsel durch systematisches Ja-Nein-Fragen (Tier? Vogel? Singt?). Georg protestiert, da Jochen durch zu viel Hilfe nur 'abstaubt', aber Jochen claimit den Punkt explizit: 'Ich nehme den Punkt total.'",
+    "_auto": true,
+    "_confidence": "high",
+    "_model": "claude-haiku-4-5-20251001"
+  },
   "_comment": "Manuelle Annotationen für Rätsel-Sieger. Key = Folgennummer. Override-Felder: winner (etienne|jochen|georg|null), question (string), answer (string), skipped (bool für Folgen ohne Rätsel), notes (string)."
 }

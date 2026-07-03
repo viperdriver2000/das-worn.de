@@ -1,26 +1,26 @@
 {
-  "episodeCount": 367,
+  "episodeCount": 368,
   "skippedRaetselCount": 0,
-  "totalWords": 5261370,
-  "totalChars": 30848594,
+  "totalWords": 5275573,
+  "totalChars": 30931870,
   "avgWords": 14336,
   "winners": {
     "etienne": 165,
-    "jochen": 126,
+    "jochen": 127,
     "georg": 19,
     "unknown": 70,
     "beidenEpisodes": 12,
-    "riddleCount": 384
+    "riddleCount": 385
   },
   "totalMentions": {
-    "etienne": 3459,
-    "jochen": 6396,
-    "georg": 3811
+    "etienne": 3462,
+    "jochen": 6405,
+    "georg": 3822
   },
   "topGlobal": [
     {
       "word": "diese",
-      "count": 8823
+      "count": 8843
     },
     {
       "word": "jochen",
@@ -28,11 +28,11 @@
     },
     {
       "word": "zwei",
-      "count": 4695
+      "count": 4726
     },
     {
       "word": "podcast",
-      "count": 4296
+      "count": 4310
     },
     {
       "word": "dieser",
@@ -40,11 +40,11 @@
     },
     {
       "word": "dieses",
-      "count": 2170
+      "count": 2188
     },
     {
       "word": "drei",
-      "count": 2058
+      "count": 2076
     },
     {
       "word": "ahnung",
@@ -103,12 +103,12 @@
       "count": 692
     },
     {
-      "word": "frau",
+      "word": "problem",
       "count": 603
     },
     {
-      "word": "problem",
-      "count": 576
+      "word": "frau",
+      "count": 603
     },
     {
       "word": "ehrlich",
@@ -119,24 +119,24 @@
       "count": 542
     },
     {
-      "word": "kinder",
-      "count": 514
+      "word": "rein",
+      "count": 528
     },
     {
-      "word": "rein",
-      "count": 513
+      "word": "kinder",
+      "count": 514
     },
     {
       "word": "geschichte",
       "count": 510
     },
     {
-      "word": "davon",
-      "count": 479
+      "word": "erstmal",
+      "count": 493
     },
     {
-      "word": "scheiße",
-      "count": 477
+      "word": "idee",
+      "count": 480
     }
   ],
   "longest": [
@@ -249,20 +249,20 @@
   ],
   "totalFun": {
     "haha": 29,
-    "quatsch": 783,
-    "cool": 1435,
-    "geil": 4109,
-    "krass": 917,
+    "quatsch": 784,
+    "cool": 1437,
+    "geil": 4119,
+    "krass": 918,
     "digga": 26,
-    "alter": 1758,
-    "scheisse": 3278,
-    "leute": 9472,
-    "tschuess": 877,
-    "podcast": 6193,
+    "alter": 1759,
+    "scheisse": 3288,
+    "leute": 9505,
+    "tschuess": 879,
+    "podcast": 6207,
     "pommes": 378,
     "nettetal": 4,
     "lobberich": 119,
     "nordfriese": 2
   },
-  "estimatedHours": 675
+  "estimatedHours": 676
 }

@@ -4966,5 +4966,28 @@
     "episodeNumber": 367,
     "episodeTitle": "Brot und Salz",
     "_model": "claude-haiku-4-5-20251001"
+  },
+  "368": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "Kinderwagen-Schaltgetriebe",
+        "summary": "Funktionsloses Gangschalt-Fidget-Gadget für Kinderwagen als Beschäftigungstool für Eltern. Hochwertige und günstigere Versionen geplant.",
+        "originator": null,
+        "viability": "halbernst",
+        "category": "Produkt"
+      },
+      {
+        "name": "Ex-Partner Bewertungsportal",
+        "summary": "Kostenloses Portal zum Bewerten von Ex-Partnern nach Kategorien (Sex, Aussehen, Humor, etc.). Nutzer zahlen 30-100EUR einmalig um Bewertungen einzusehen.",
+        "originator": "etienne",
+        "viability": "ernsthaft",
+        "category": "App/Software"
+      }
+    ],
+    "notes": "Weitere besprochene Konzepte wie autonomer Kinderwagen, Rohrpost-Transport oder Zahnspangen mit Scheibenwischern waren humorvolle Fantasien ohne echte Substanz.",
+    "episodeNumber": 368,
+    "episodeTitle": "Der Pissoir Psychopath",
+    "_model": "claude-haiku-4-5-20251001"
   }
 }
