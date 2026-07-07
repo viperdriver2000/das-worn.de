@@ -68,14 +68,19 @@ Claude **muss** vor dem Klonen prüfen, welche VMID/IP frei ist (`qm list`, `ssh
 |------|------|-----------|------|-----------|------|-------|
 | 9000 | tmpl-debian12 | – | – | – | – | Template (nicht starten) |
 | 101  | proxy | 10.10.10.2 | `role-proxy` | (alle, via Caddy) | 80/443 | Reverse Proxy (Caddy) |
-| 130  | dasworn-web | 10.10.10.40 | `proj-dasworn,role-web,env-prod` | das-worn.de | 3000 | Hono auf Node + Ollama (llama3.1:8b) — migriert von CF Workers |
-| _110+_ | _`acme-web` …_ | _10.10.10.20+_ | _`proj-acme,role-web,env-prod`_ | | | _neue Dienste hier eintragen_ |
+| 230 (LXC) | dasworn | 10.10.10.40 | `proj-dasworn,role-app,env-prod` | das-worn.de | 3000 | Hono/Node + Ollama (llama3.1:8b) + **wöchentliche Whisper-Build-Pipeline** (faster-whisper large-v3, systemd-Timer Fr 04:00). **Konsolidiert 2026-07-07 (KOL-97):** früherer `dasworn-cron` (231) in **diesen** LXC absorbiert; Deploy jetzt **lokal** (`cp dist/server.mjs` + `dasworn-reload.path` statt scp). Alt-LXC 231 stoppen/löschen. |
+| _110+_ | _`acme` …_ | _10.10.10.20+_ | _`proj-acme,role-app,env-prod`_ | | | _neuen Projekt-Container (ein LXC) hier eintragen_ |
 
-**Konventionen:** Dienst-VMs ab **VMID 110**, interne IPs ab **10.10.10.20**. DB-VMs separat (z.B. 10.10.10.30+).
+**Konventionen:** **Ein Projekt = ein LXC** (Default, §2.1). Projekt-Container ab **VMID 110**, interne IPs ab **10.10.10.20**. Multi-Service läuft **im selben LXC** (Docker Compose **oder** native Dienste) — **nicht** als separate VMs/Container. Separate Container nur als begründete Ausnahme.
 
-### 2.1 Namens- & Tagging-Konvention (pro Projekt EINHEITLICH — Pflicht)
+### 2.1 Ein-Container-pro-Projekt-Regel + Namens-/Tagging-Konvention (Pflicht)
 
-Ziel: **Zusammengehörige VMs eines Projekts sofort erkennen** — im Web-UI (farbige Tags, Gruppierung)
+**Grundregel: ein Projekt = ein Container (LXC).** Mehrere Dienste laufen **innerhalb** dieses LXC
+(Docker Compose **oder** native systemd-Dienste), **nicht** als separate VMs/Container. Separate
+Container nur als begründete Ausnahme (§2). Container-Name = `<projekt>[-app]`; Rollen-Suffixe
+(`-db`, `-redis`, …) sind interne Service-Namen, keine eigenen Container.
+
+Ziel: **ein Projekt sofort erkennen** — im Web-UI (farbige Tags, Gruppierung)
 und auf der CLI (`qm list`, `pct list`, `docker ps`).
 
 **1) VM-Name = `<projekt>-<rolle>[-<env>]`** (lowercase, kebab-case). Alle VMs eines Projekts teilen
