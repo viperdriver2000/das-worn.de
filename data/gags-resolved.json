@@ -1010,8 +1010,8 @@
     ],
     "host": "georg",
     "key": "kaercher",
-    "episodeCount": 40,
-    "totalMentions": 116,
+    "episodeCount": 41,
+    "totalMentions": 118,
     "episodes": [
       {
         "number": 28,
@@ -1211,6 +1211,11 @@
       {
         "number": 367,
         "title": "Brot und Salz",
+        "mentions": 2
+      },
+      {
+        "number": 369,
+        "title": "Brille? Teuer!",
         "mentions": 2
       }
     ]

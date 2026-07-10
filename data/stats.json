@@ -1,26 +1,26 @@
 {
-  "episodeCount": 368,
+  "episodeCount": 369,
   "skippedRaetselCount": 0,
-  "totalWords": 5275573,
-  "totalChars": 30931870,
-  "avgWords": 14336,
+  "totalWords": 5287161,
+  "totalChars": 30998433,
+  "avgWords": 14328,
   "winners": {
     "etienne": 165,
     "jochen": 127,
     "georg": 19,
-    "unknown": 70,
+    "unknown": 71,
     "beidenEpisodes": 12,
-    "riddleCount": 385
+    "riddleCount": 386
   },
   "totalMentions": {
-    "etienne": 3462,
-    "jochen": 6405,
-    "georg": 3822
+    "etienne": 3469,
+    "jochen": 6416,
+    "georg": 3835
   },
   "topGlobal": [
     {
       "word": "diese",
-      "count": 8843
+      "count": 8859
     },
     {
       "word": "jochen",
@@ -28,7 +28,7 @@
     },
     {
       "word": "zwei",
-      "count": 4726
+      "count": 4740
     },
     {
       "word": "podcast",
@@ -44,23 +44,23 @@
     },
     {
       "word": "drei",
-      "count": 2076
+      "count": 2096
     },
     {
       "word": "ahnung",
       "count": 1953
     },
     {
+      "word": "euro",
+      "count": 1898
+    },
+    {
       "word": "auto",
       "count": 1887
     },
     {
-      "word": "euro",
-      "count": 1873
-    },
-    {
       "word": "georg",
-      "count": 1760
+      "count": 1773
     },
     {
       "word": "anderen",
@@ -68,7 +68,7 @@
     },
     {
       "word": "moment",
-      "count": 1231
+      "count": 1245
     },
     {
       "word": "diesen",
@@ -116,7 +116,7 @@
     },
     {
       "word": "geld",
-      "count": 542
+      "count": 559
     },
     {
       "word": "rein",
@@ -249,20 +249,20 @@
   ],
   "totalFun": {
     "haha": 29,
-    "quatsch": 784,
-    "cool": 1437,
-    "geil": 4119,
-    "krass": 918,
+    "quatsch": 787,
+    "cool": 1438,
+    "geil": 4130,
+    "krass": 928,
     "digga": 26,
-    "alter": 1759,
-    "scheisse": 3288,
-    "leute": 9505,
-    "tschuess": 879,
-    "podcast": 6207,
+    "alter": 1761,
+    "scheisse": 3293,
+    "leute": 9512,
+    "tschuess": 881,
+    "podcast": 6213,
     "pommes": 378,
     "nettetal": 4,
     "lobberich": 119,
     "nordfriese": 2
   },
-  "estimatedHours": 676
+  "estimatedHours": 678
 }
