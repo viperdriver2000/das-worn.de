@@ -1,50 +1,54 @@
 {
-  "episodeCount": 377,
+  "episodeCount": 380,
   "skippedRaetselCount": 0,
-  "totalWords": 5399248,
-  "totalChars": 31658146,
-  "avgWords": 14322,
+  "totalWords": 5444171,
+  "totalChars": 31922617,
+  "avgWords": 14327,
   "winners": {
     "etienne": 168,
-    "jochen": 129,
+    "jochen": 133,
     "georg": 19,
     "unknown": 74,
     "beidenEpisodes": 12,
-    "riddleCount": 394
+    "riddleCount": 397
   },
   "totalMentions": {
-    "etienne": 3540,
-    "jochen": 6541,
-    "georg": 3896
+    "etienne": 3575,
+    "jochen": 6586,
+    "georg": 3933
   },
   "topGlobal": [
     {
       "word": "diese",
-      "count": 9029
+      "count": 9103
     },
     {
       "word": "jochen",
-      "count": 5506
+      "count": 5551
     },
     {
       "word": "zwei",
-      "count": 4875
+      "count": 4931
     },
     {
       "word": "podcast",
-      "count": 4359
+      "count": 4416
     },
     {
       "word": "dieser",
-      "count": 2444
+      "count": 2474
     },
     {
       "word": "dieses",
-      "count": 2260
+      "count": 2290
     },
     {
       "word": "drei",
-      "count": 2137
+      "count": 2151
+    },
+    {
+      "word": "euro",
+      "count": 1972
     },
     {
       "word": "auto",
@@ -55,20 +59,16 @@
       "count": 1967
     },
     {
-      "word": "euro",
-      "count": 1929
-    },
-    {
       "word": "georg",
-      "count": 1784
+      "count": 1804
     },
     {
       "word": "anderen",
-      "count": 1568
+      "count": 1584
     },
     {
       "word": "moment",
-      "count": 1257
+      "count": 1271
     },
     {
       "word": "namen",
@@ -84,7 +84,7 @@
     },
     {
       "word": "drauf",
-      "count": 897
+      "count": 917
     },
     {
       "word": "dran",
@@ -100,7 +100,7 @@
     },
     {
       "word": "andere",
-      "count": 704
+      "count": 718
     },
     {
       "word": "frau",
@@ -111,12 +111,12 @@
       "count": 603
     },
     {
-      "word": "geld",
-      "count": 584
+      "word": "ehrlich",
+      "count": 593
     },
     {
-      "word": "ehrlich",
-      "count": 574
+      "word": "geld",
+      "count": 584
     },
     {
       "word": "kinder",
@@ -249,20 +249,20 @@
   ],
   "totalFun": {
     "haha": 29,
-    "quatsch": 800,
-    "cool": 1483,
-    "geil": 4229,
-    "krass": 943,
-    "digga": 27,
-    "alter": 1794,
-    "scheisse": 3381,
-    "leute": 9686,
-    "tschuess": 902,
-    "podcast": 6327,
-    "pommes": 427,
+    "quatsch": 807,
+    "cool": 1490,
+    "geil": 4260,
+    "krass": 961,
+    "digga": 28,
+    "alter": 1814,
+    "scheisse": 3412,
+    "leute": 9778,
+    "tschuess": 908,
+    "podcast": 6391,
+    "pommes": 428,
     "nettetal": 4,
     "lobberich": 119,
     "nordfriese": 2
   },
-  "estimatedHours": 692
+  "estimatedHours": 698
 }

@@ -10,8 +10,8 @@
     ],
     "host": "jochen",
     "key": "kreidefrau",
-    "episodeCount": 29,
-    "totalMentions": 75,
+    "episodeCount": 30,
+    "totalMentions": 76,
     "episodes": [
       {
         "number": 30,
@@ -157,6 +157,11 @@
         "number": 341,
         "title": "Polarlichter und das Gute- Morgen-Bäuerchen",
         "mentions": 4
+      },
+      {
+        "number": 379,
+        "title": "Koksende Erstklässler",
+        "mentions": 1
       }
     ]
   },
