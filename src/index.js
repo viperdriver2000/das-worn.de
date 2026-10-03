@@ -19,6 +19,7 @@ import {
 } from "./views/pages.js";
 import { handleChat } from "./api/chat.js";
 import businessIdeas from "../data/business-ideas.json";
+import { abs, u } from "./base.js";
 
 const app = new Hono();
 
@@ -65,7 +66,6 @@ app.post("/api/chat", handleChat);
 app.get("/business-ideen", (c) => html(c, renderBusinessIdeas({ businessIdeas, episodes })));
 
 // Sitemap & robots
-const SITE_URL = "https://das-worn.de";
 app.get("/sitemap.xml", (c) => {
   const today = new Date().toISOString().slice(0, 10);
   const urls = [
@@ -89,11 +89,11 @@ app.get("/sitemap.xml", (c) => {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls
-  .map((u) => `  <url>
-    <loc>${SITE_URL}${u.loc}</loc>
+  .map((item) => `  <url>
+    <loc>${abs(item.loc)}</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority.toFixed(1)}</priority>
+    <changefreq>${item.changefreq}</changefreq>
+    <priority>${item.priority.toFixed(1)}</priority>
   </url>`)
   .join("\n")}
 </urlset>`;
@@ -105,15 +105,15 @@ ${urls
 
 // Easter egg routes
 app.get("/pommes", (c) => html(c, renderPommes()));
-app.get("/eddi", (c) => c.redirect("/hosts#etienne", 302));
-app.get("/onkel-barlow", (c) => c.redirect("/hosts#georg", 302));
-app.get("/noriega", (c) => c.redirect("/folge/1", 302));
-app.get("/kreidefrau", (c) => c.redirect("/lore/kreidefrau", 302));
-app.get("/stradivari", (c) => c.redirect("/lore/stradivari", 302));
+app.get("/eddi", (c) => c.redirect(u("/hosts#etienne"), 302));
+app.get("/onkel-barlow", (c) => c.redirect(u("/hosts#georg"), 302));
+app.get("/noriega", (c) => c.redirect(u("/folge/1"), 302));
+app.get("/kreidefrau", (c) => c.redirect(u("/lore/kreidefrau"), 302));
+app.get("/stradivari", (c) => c.redirect(u("/lore/stradivari"), 302));
 
 app.get("/random", (c) => {
   const ep = episodes[Math.floor(Math.random() * episodes.length)];
-  return c.redirect(`/folge/${ep.number}`, 302);
+  return c.redirect(u(`/folge/${ep.number}`), 302);
 });
 
 // JSON API endpoints (handy for fans who want raw data)

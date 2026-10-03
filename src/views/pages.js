@@ -1,4 +1,5 @@
 import { layout, html, raw, escapeHtml } from "./layout.js";
+import { u } from "../base.js";
 
 const HOST_INFO = {
   etienne: {
@@ -64,8 +65,8 @@ export function renderPommes() {
         Etienne, wir vergessen das nie.
       </p>
       <div class="hero-buttons">
-        <a class="btn primary" href="/lore/tiefkuehlpommes">Zum Pommes-Lore-Eintrag</a>
-        <a class="btn" href="/">Wieder zurück zur Vernunft</a>
+        <a class="btn primary" href="${u("/lore/tiefkuehlpommes")}">Zum Pommes-Lore-Eintrag</a>
+        <a class="btn" href="${u("/")}">Wieder zurück zur Vernunft</a>
       </div>
     </section>
     <p class="muted" style="text-align:center;margin-top:2rem">
@@ -153,7 +154,7 @@ export function renderBusinessIdeas({ businessIdeas, episodes }) {
           </div>
         </header>
         <p class="idea-summary">${i.summary}</p>
-        <p class="idea-src"><a href="/folge/${i.episodeNumber}">→ aus Folge #${i.episodeNumber}: ${i.episodeTitle}</a></p>
+        <p class="idea-src"><a href="${u(`/folge/${i.episodeNumber}`)}">→ aus Folge #${i.episodeNumber}: ${i.episodeTitle}</a></p>
       </article>
     `;
   };
@@ -293,7 +294,7 @@ export function renderChat({ stats }) {
           .replace(/\\*\\*([^*]+)\\*\\*/g, '<strong>$1</strong>')
           .replace(/\\[([^\\]]+)\\]\\((https?:\\/\\/[^)\\s]+)\\)/g, '<a href="$2" rel="noopener">$1</a>')
           .replace(/(https?:\\/\\/[^\\s<]+)/g, (u) => '<a href="' + u + '" rel="noopener">' + u + '</a>')
-          .replace(/(?:^|\\s)#(\\d+)\\b/g, (m, n) => m.replace('#' + n, '<a href="/folge/' + n + '">#' + n + '</a>'))
+          .replace(/(?:^|\\s)#(\\d+)\\b/g, (m, n) => m.replace('#' + n, '<a href="${u("/folge/")}' + n + '">#' + n + '</a>'))
           .replace(/\\n/g, '<br>');
       }
 
@@ -306,7 +307,7 @@ export function renderChat({ stats }) {
         const thinking = appendMsg('bot', '…');
 
         try {
-          const r = await fetch('/api/chat', {
+          const r = await fetch('${u("/api/chat")}', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ messages: history }),
@@ -382,7 +383,7 @@ export function renderLoreIndex({ gags }) {
         ? html`<span class="host-badge host-${g.host}" style="background:${HOST_INFO[g.host].color}">${HOST_INFO[g.host].name}</span>`
         : "";
       return html`
-        <a class="gag-card" href="/lore/${key}">
+        <a class="gag-card" href="${u(`/lore/${key}`)}">
           <div class="gag-emoji">${g.emoji || "🎲"}</div>
           <div class="gag-info">
             <h3>${g.name}</h3>
@@ -423,12 +424,12 @@ export function renderLoreDetail({ gag, episodes }) {
     .map((num) => {
       const ep = episodes.find((e) => e.number === num);
       return ep
-        ? html`<a class="ep-row" href="/folge/${ep.number}"><span class="ep-num">#${ep.number}</span><span class="ep-title">${ep.title}</span><span class="ep-meta">eigene Folge</span></a>`
+        ? html`<a class="ep-row" href="${u(`/folge/${ep.number}`)}"><span class="ep-num">#${ep.number}</span><span class="ep-title">${ep.title}</span><span class="ep-meta">eigene Folge</span></a>`
         : "";
     });
 
   const allRows = (gag.episodes || []).map((ep) => html`
-    <a class="ep-row" href="/folge/${ep.number}">
+    <a class="ep-row" href="${u(`/folge/${ep.number}`)}">
       <span class="ep-num">#${ep.number}</span>
       <span class="ep-title">${ep.title}</span>
       <span class="ep-meta">${ep.mentions}× erwähnt${dedicatedEpisodesByNum.has(ep.number) ? " · ⭐ eigene Folge" : ""}</span>
@@ -436,7 +437,7 @@ export function renderLoreDetail({ gag, episodes }) {
   `);
 
   const body = html`
-    <p class="back-link"><a href="/lore">← Alle Running Gags</a></p>
+    <p class="back-link"><a href="${u("/lore")}">← Alle Running Gags</a></p>
     <div class="gag-detail-header">
       <div class="gag-emoji-big">${gag.emoji || "🎲"}</div>
       <div>
@@ -487,7 +488,7 @@ export function renderHome({ stats, episodes, gags }) {
   const recentCards = recent
     .map(
       (e) => html`
-        <a class="card episode-card" href="/folge/${e.number}">
+        <a class="card episode-card" href="${u(`/folge/${e.number}`)}">
           <div class="card-num">Folge ${e.number}</div>
           <div class="card-title">${e.title}</div>
           <div class="card-meta">${e.wordCount.toLocaleString("de-DE")} Wörter</div>
@@ -507,9 +508,9 @@ export function renderHome({ stats, episodes, gags }) {
         ${stats.totalWords.toLocaleString("de-DE")} Wörter Quatsch.
       </p>
       <div class="hero-buttons">
-        <a class="btn primary" href="/folgen">Alle Folgen</a>
-        <a class="btn" href="/raetsel">Rätsel & Punkte</a>
-        <a class="btn" href="/random">🎲 Random Folge</a>
+        <a class="btn primary" href="${u("/folgen")}">Alle Folgen</a>
+        <a class="btn" href="${u("/raetsel")}">Rätsel & Punkte</a>
+        <a class="btn" href="${u("/random")}">🎲 Random Folge</a>
       </div>
     </section>
 
@@ -535,7 +536,7 @@ export function renderHome({ stats, episodes, gags }) {
     <section>
       <h2>Neueste Folgen</h2>
       <div class="card-grid">${raw(recentCards)}</div>
-      <p><a class="link-arrow" href="/folgen">Alle ${stats.episodeCount} Folgen ansehen →</a></p>
+      <p><a class="link-arrow" href="${u("/folgen")}">Alle ${stats.episodeCount} Folgen ansehen →</a></p>
     </section>
 
     ${gags ? html`
@@ -547,14 +548,14 @@ export function renderHome({ stats, episodes, gags }) {
             .sort((a, b) => b[1].episodeCount - a[1].episodeCount)
             .slice(0, 4)
             .map(([key, g]) => html`
-              <a class="gag-chip" href="/lore/${key}">
+              <a class="gag-chip" href="${u(`/lore/${key}`)}">
                 <span class="gag-chip-emoji">${g.emoji || "🎲"}</span>
                 <span class="gag-chip-name">${g.name}</span>
                 <span class="gag-chip-meta">${g.episodeCount} Folgen</span>
               </a>
             `)}
         </div>
-        <p><a class="link-arrow" href="/lore">Alle Running Gags →</a></p>
+        <p><a class="link-arrow" href="${u("/lore")}">Alle Running Gags →</a></p>
       </section>
     ` : ""}
 
@@ -566,7 +567,7 @@ export function renderHome({ stats, episodes, gags }) {
             Object.entries(HOST_INFO)
               .map(
                 ([key, h]) => html`
-                  <a class="host-chip" style="--c:${h.color}" href="/hosts#${key}">
+                  <a class="host-chip" style="--c:${h.color}" href="${u(`/hosts#${key}`)}">
                     <span class="host-name">${h.name}</span>
                     <span class="host-meta">${stats.totalMentions[key].toLocaleString("de-DE")} Erwähnungen</span>
                   </a>
@@ -579,8 +580,8 @@ export function renderHome({ stats, episodes, gags }) {
       <div>
         <h2>Schnell-Stats</h2>
         <ul class="quick-stats">
-          <li><strong>Längste Folge:</strong> <a href="/folge/${stats.longest[0].number}">#${stats.longest[0].number} ${escapeHtml(stats.longest[0].title)}</a> (${stats.longest[0].wordCount.toLocaleString("de-DE")} Wörter)</li>
-          <li><strong>Kürzeste Folge:</strong> <a href="/folge/${stats.shortest[0].number}">#${stats.shortest[0].number} ${escapeHtml(stats.shortest[0].title)}</a></li>
+          <li><strong>Längste Folge:</strong> <a href="${u(`/folge/${stats.longest[0].number}`)}">#${stats.longest[0].number} ${escapeHtml(stats.longest[0].title)}</a> (${stats.longest[0].wordCount.toLocaleString("de-DE")} Wörter)</li>
+          <li><strong>Kürzeste Folge:</strong> <a href="${u(`/folge/${stats.shortest[0].number}`)}">#${stats.shortest[0].number} ${escapeHtml(stats.shortest[0].title)}</a></li>
           <li><strong>Pommes-Erwähnungen total:</strong> ${stats.totalFun.pommes}× 🍟</li>
           <li><strong>"Quatsch" gesagt:</strong> ${stats.totalFun.quatsch}×</li>
           <li><strong>"Tschüss" gesagt:</strong> ${stats.totalFun.tschuess}×</li>
@@ -616,7 +617,7 @@ export function renderEpisodesList({ episodes, query }) {
     .sort((a, b) => b.number - a.number)
     .map(
       (e) => html`
-        <a class="ep-row" href="/folge/${e.number}">
+        <a class="ep-row" href="${u(`/folge/${e.number}`)}">
           <span class="ep-num">#${e.number}</span>
           <span class="ep-title">${e.title}</span>
           <span class="ep-meta">${(e.wordCount / 1000).toFixed(1)}k W.</span>
@@ -628,10 +629,10 @@ export function renderEpisodesList({ episodes, query }) {
   const body = html`
     <h1>Alle Folgen</h1>
     <p>${filtered.length} von ${episodes.length} Folgen.</p>
-    <form class="search-form" method="get" action="/folgen">
+    <form class="search-form" method="get" action="${u("/folgen")}">
       <input type="search" name="q" placeholder="Folgentitel oder -nummer..." value="${q}" autofocus>
       <button type="submit">Suchen</button>
-      ${q ? html`<a class="btn-ghost" href="/folgen">×</a>` : ""}
+      ${q ? html`<a class="btn-ghost" href="${u("/folgen")}">×</a>` : ""}
     </form>
     <div class="ep-list">${raw(list || "<p>Keine Folgen gefunden.</p>")}</div>
   `;
@@ -661,8 +662,8 @@ export function renderEpisode({ episode, prev, next }) {
   const mentions = episode.hostMentions;
   const totalM = mentions.etienne + mentions.jochen + mentions.georg || 1;
 
-  const navPrev = prev ? html`<a class="prev-next" href="/folge/${prev.number}">← #${prev.number} ${prev.title}</a>` : "";
-  const navNext = next ? html`<a class="prev-next next" href="/folge/${next.number}">#${next.number} ${next.title} →</a>` : "";
+  const navPrev = prev ? html`<a class="prev-next" href="${u(`/folge/${prev.number}`)}">← #${prev.number} ${prev.title}</a>` : "";
+  const navNext = next ? html`<a class="prev-next next" href="${u(`/folge/${next.number}`)}">#${next.number} ${next.title} →</a>` : "";
 
   const topWordsHtml = (episode.topWords || [])
     .slice(0, 12)
@@ -876,7 +877,7 @@ export function renderRaetsel({ episodes, stats }) {
       ? html`<span class="conf conf-${e.raetsel.confidence}">${e.raetsel.confidence}</span>`
       : "";
     return html`
-      <a class="ep-row" href="/folge/${e.number}">
+      <a class="ep-row" href="${u(`/folge/${e.number}`)}">
         <span class="ep-num">#${e.number}</span>
         <span class="ep-title">${e.title}</span>
         ${confBadge}
@@ -969,7 +970,7 @@ export function renderStats({ stats }) {
   const longestRows = stats.longest
     .map(
       (e) => html`
-        <a class="ep-row" href="/folge/${e.number}">
+        <a class="ep-row" href="${u(`/folge/${e.number}`)}">
           <span class="ep-num">#${e.number}</span>
           <span class="ep-title">${e.title}</span>
           <span class="ep-meta">${e.wordCount.toLocaleString("de-DE")} Wörter</span>
@@ -981,7 +982,7 @@ export function renderStats({ stats }) {
   const shortestRows = stats.shortest
     .map(
       (e) => html`
-        <a class="ep-row" href="/folge/${e.number}">
+        <a class="ep-row" href="${u(`/folge/${e.number}`)}">
           <span class="ep-num">#${e.number}</span>
           <span class="ep-title">${e.title}</span>
           <span class="ep-meta">${e.wordCount.toLocaleString("de-DE")} Wörter</span>
@@ -993,7 +994,7 @@ export function renderStats({ stats }) {
   const laughRows = stats.mostLaughs
     .map(
       (e) => html`
-        <a class="ep-row" href="/folge/${e.number}">
+        <a class="ep-row" href="${u(`/folge/${e.number}`)}">
           <span class="ep-num">#${e.number}</span>
           <span class="ep-title">${e.title}</span>
           <span class="ep-meta">${e.count}× haha</span>
@@ -1005,7 +1006,7 @@ export function renderStats({ stats }) {
   const quatschRows = stats.mostQuatsch
     .map(
       (e) => html`
-        <a class="ep-row" href="/folge/${e.number}">
+        <a class="ep-row" href="${u(`/folge/${e.number}`)}">
           <span class="ep-num">#${e.number}</span>
           <span class="ep-title">${e.title}</span>
           <span class="ep-meta">${e.count}× Quatsch</span>
@@ -1209,9 +1210,9 @@ export function renderNotFound() {
       <h1>404 – Folge nicht gefunden</h1>
       <p>Diese Seite gibt es nicht. Vielleicht hat Jochen sie geklaut.</p>
       <div class="hero-buttons">
-        <a class="btn primary" href="/">Zur Startseite</a>
-        <a class="btn" href="/folgen">Alle Folgen</a>
-        <a class="btn" href="/random">🎲 Random Folge</a>
+        <a class="btn primary" href="${u("/")}">Zur Startseite</a>
+        <a class="btn" href="${u("/folgen")}">Alle Folgen</a>
+        <a class="btn" href="${u("/random")}">🎲 Random Folge</a>
       </div>
     </section>
   `;

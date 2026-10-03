@@ -1,6 +1,8 @@
 // HTML layout & shared building blocks.
 // Plain template literals; SafeHtml class lets nested html`` not get escaped.
 
+import { BASE_PATH, SITE_URL, abs, u } from "../base.js";
+
 class SafeHtml {
   constructor(s) { this.s = s; }
   toString() { return this.s; }
@@ -43,7 +45,6 @@ export function raw(s) {
 }
 
 const SITE_NAME = "das worn";
-const SITE_URL = "https://das-worn.de";
 const DEFAULT_DESCRIPTION = "das worn – das Wiki Ohne Richtigen Namen zum Podcast ohne richtigen Namen mit Etienne Gardé, Jochen Dominicus und Georg Zaal. 362+ Folgen, Rätsel-Punkte, Running Gags und ein Chat-Assistent.";
 const DEFAULT_OG_IMAGE = "/og-default.svg";
 
@@ -51,18 +52,18 @@ export function layout({ title, body, currentNav = "", description, ogImage, ogT
   const desc = description || DEFAULT_DESCRIPTION;
   const img = ogImage || DEFAULT_OG_IMAGE;
   const type = ogType || "website";
-  const canonical = path ? SITE_URL + path : SITE_URL;
+  const canonical = path && path !== "/" ? abs(path) : BASE_PATH ? `${SITE_URL}${BASE_PATH}/` : SITE_URL;
   const fullTitle = title ? `${title} – ${SITE_NAME}` : SITE_NAME;
   const navItems = [
-    { href: "/", label: "Start", id: "start" },
-    { href: "/folgen", label: "Folgen", id: "folgen" },
-    { href: "/raetsel", label: "Rätsel & Punkte", id: "raetsel" },
-    { href: "/lore", label: "Running Gags", id: "lore" },
-    { href: "/business-ideen", label: "Business-Ideen", id: "ideas" },
-    { href: "/hosts", label: "Hosts", id: "hosts" },
-    { href: "/statistiken", label: "Statistiken", id: "stats" },
-    { href: "/chat", label: "💬 Chat", id: "chat" },
-    { href: "/random", label: "Random Folge", id: "random" },
+    { href: u("/"), label: "Start", id: "start" },
+    { href: u("/folgen"), label: "Folgen", id: "folgen" },
+    { href: u("/raetsel"), label: "Rätsel & Punkte", id: "raetsel" },
+    { href: u("/lore"), label: "Running Gags", id: "lore" },
+    { href: u("/business-ideen"), label: "Business-Ideen", id: "ideas" },
+    { href: u("/hosts"), label: "Hosts", id: "hosts" },
+    { href: u("/statistiken"), label: "Statistiken", id: "stats" },
+    { href: u("/chat"), label: "💬 Chat", id: "chat" },
+    { href: u("/random"), label: "Random Folge", id: "random" },
   ];
   const nav = navItems
     .map((it) => `<a class="${currentNav === it.id ? "active" : ""}" href="${it.href}">${escapeHtml(it.label)}</a>`)
@@ -72,7 +73,7 @@ export function layout({ title, body, currentNav = "", description, ogImage, ogT
 
   const cookieBanner = `
 <div id="cookie-banner" class="cookie-banner" hidden>
-  <img src="/cookie.png" alt="Eddi-Cookie" class="cookie-img">
+  <img src="${u("/cookie.png")}" alt="Eddi-Cookie" class="cookie-img">
   <div class="cookie-content">
     <p class="cookie-headline">Moin, ich bin Eddi.</p>
     <p>
@@ -185,21 +186,21 @@ export function layout({ title, body, currentNav = "", description, ogImage, ogT
 <meta property="og:type" content="${escapeHtml(type)}">
 <meta property="og:url" content="${escapeHtml(canonical)}">
 <meta property="og:locale" content="de_DE">
-<meta property="og:image" content="${escapeHtml(SITE_URL + img)}">
+<meta property="og:image" content="${escapeHtml(abs(img))}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${escapeHtml(fullTitle)}">
 <meta name="twitter:description" content="${escapeHtml(desc)}">
-<meta name="twitter:image" content="${escapeHtml(SITE_URL + img)}">
-<link rel="stylesheet" href="/css/main.css">
+<meta name="twitter:image" content="${escapeHtml(abs(img))}">
+<link rel="stylesheet" href="${u("/css/main.css")}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🎙️</text></svg>">
-<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<link rel="sitemap" type="application/xml" href="${u("/sitemap.xml")}">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/" title="Das Wiki Ohne Richtigen Namen" id="brand-link">
+    <a class="brand" href="${u("/")}" title="Das Wiki Ohne Richtigen Namen" id="brand-link">
       <span class="brand-emoji" id="brand-emoji" role="button" tabindex="0" aria-label="Mehrfach klicken für Easter Egg" title="🎙️ Klick mich 5× schnell.">🎙️</span>
       <span class="brand-text">das <span class="brand-worn"><span class="acr">W</span><span class="acr">O</span><span class="acr">R</span><span class="acr">N</span></span></span>
       <span class="brand-sub"><strong>W</strong>iki <strong>O</strong>hne <strong>R</strong>ichtigen <strong>N</strong>amen</span>
@@ -238,7 +239,7 @@ ${bodyStr}
       <a href="https://paypal.me/gigalogi" rel="noopener" title="Wiki-Bauer Kolja unterstützen – paypal@koljasagorski.de">☕ Wiki-Spende</a>
       <a href="mailto:worn@sagorski.org" title="Kontakt zum Wiki-Bauer">✉️ Kontakt</a>
     </nav>
-    <p class="footer-meta">Läuft auf Cloudflare Workers · <a href="/about">Über dieses Wiki</a></p>
+    <p class="footer-meta">Läuft auf Cloudflare Workers · <a href="${u("/about")}">Über dieses Wiki</a></p>
   </div>
 </footer>
 ${cookieBanner}
