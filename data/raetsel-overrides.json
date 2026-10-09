@@ -6706,5 +6706,14 @@
       "georg": 0
     },
     "_riddleCount": 1
+  },
+  "381": {
+    "winner": null,
+    "question": "Woher hat das SHH-Protein seinen Namen?",
+    "answer": "SHH = Sonic Hedgehog. Das Gen gehoert zur Hedgehog-Genfamilie, die bei Fruchtfliegen entdeckt wurde (Mutation mit ungewoehnlich stacheligem Koerper), benannt nach dem Igel Sonic the Hedgehog.",
+    "notes": "Loeser nicht eindeutig zuzuordnen (keine Sprecher-Diarisierung). Geloest wird mit 'Ich moechte loesen. Es ist Sonic the Hedgehog.' Georg bestaetigt direkt ('Korrekt') - das spricht fuer Jochen, der laut Georg den ganzen Endspurt ueber am Zug bleibt ('pass mal auf, Jochen, du bleibst mal weiterhin dran'). Dagegen spricht der direkt folgende Satz 'Ich hasse dein sueffisantes Grinsen. Endlich wieder Gerechtigkeit' (passt besser zu Etienne nach der Jochengate-Serie #378-#380). Beim naechsten Feed-Update gegenpruefen - die Zuhoerer-Kommentare in #382 sollten es aufloesen (so wie #380 die Faelle #379/#380 geklaert hat).",
+    "skipped": false,
+    "_source": "transcript-mine-2026-10-09",
+    "_confidence": "low"
   }
 }
