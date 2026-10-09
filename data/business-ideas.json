@@ -5152,5 +5152,49 @@
     "episodeNumber": 380,
     "episodeTitle": "Gude Käse",
     "_source": "transcript-mine-2026-10-03"
+  },
+  "381": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "365-Tage-Kalender",
+        "summary": "Ganzjahres-Adventskalender mit 365 Tuerchen: jeden Tag eine kleine Belohnung fuers Aufstehen und Motivieren, statt nur im Dezember Suessigkeiten. Damit wuerde man das komplette Kalendergeschaeft uebernehmen ('es gibt nur noch Tuerchen').",
+        "originator": "georg",
+        "viability": "halbernst",
+        "category": "Produkt"
+      },
+      {
+        "name": "Geburtstags- und Nachtragskalender",
+        "summary": "Individualkalender, der am eigenen Geburtstag beginnt und bis zum naechsten Geburtstag laeuft - inkl. Kundenwuenschen zu Startdatum und Design, online konfigurierbar. Fuer vergessene Geburtstage gibt es den Nachtragskalender, der dann bis zum naechsten Geburtstag laeuft.",
+        "originator": "unknown",
+        "viability": "halbernst",
+        "category": "Produkt"
+      },
+      {
+        "name": "Wiederbefuellbarer Luxus-Kalender",
+        "summary": "Einmalig gekaufter, hochwertiger Kalender (Marmor mit Goldtuerchen), der jaehrlich vom 'Befueller' neu bestueckt wird - 'wie beim Sarg: es gibt den billigen Holzsarg und den geilen Sarg'. Variante: 2x3-Meter-Kalender, wandfuellend, monatlich per Truck geliefert und montiert.",
+        "originator": "jochen",
+        "viability": "gedankenspiel",
+        "category": "Produkt"
+      },
+      {
+        "name": "Ganzjahres-Ernaehrungskalender",
+        "summary": "Tuerchen passen sich dem Jahresverlauf an: Januar (Fitnessstudio-Vorsatz) Aepfel, gegen Jahresende immer ungesuender bis Marzipan, Spekulatius und Schokolade - 'die heilige Dreifaltigkeit der ekeligen Sachen'.",
+        "originator": "unknown",
+        "viability": "gedankenspiel",
+        "category": "Produkt"
+      },
+      {
+        "name": "Zahn-Airline (Luftzahnsa)",
+        "summary": "Wortspiel-Airline rund um Zahnreisen: 'Luftzahnsa' bzw. 'Dental Wings' - der Titelgeber der Folge, entstanden aus dem Wunsch nach einem amerikanischen Schauspieler-Gebiss inkl. Anreise.",
+        "originator": "etienne",
+        "viability": "witz",
+        "category": "Marketing"
+      }
+    ],
+    "notes": "Der Kalender-Block ist explizit als Millionenidee ausgefuehrt ('Wir waren noch so nah dran an der Million'); die Luftzahnsa-/Dental-Wings-Nummer ist der Namensgag der Folge (Episodentitel).",
+    "episodeNumber": 381,
+    "episodeTitle": "Ab in den Urlaub mit Luftzahnsa",
+    "_source": "transcript-mine-2026-10-09"
   }
 }
