@@ -1020,8 +1020,8 @@
     ],
     "host": "georg",
     "key": "kaercher",
-    "episodeCount": 44,
-    "totalMentions": 131,
+    "episodeCount": 45,
+    "totalMentions": 133,
     "episodes": [
       {
         "number": 28,
@@ -1241,6 +1241,11 @@
       {
         "number": 385,
         "title": "Nur ein Schritt entfernt",
+        "mentions": 2
+      },
+      {
+        "number": 387,
+        "title": "Mein Name ist Big, James Big !",
         "mentions": 2
       }
     ]

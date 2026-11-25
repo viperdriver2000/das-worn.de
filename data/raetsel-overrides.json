@@ -6772,5 +6772,20 @@
       "georg": 0
     },
     "_riddleCount": 1
+  },
+  "387": {
+    "winner": "georg",
+    "question": "Was ist der/die/das Mondopoint?",
+    "answer": "Mondopoint (MP) ist ein international genormtes Schuhgroessen-System: Grundlage ist die tatsaechliche Fusslaenge (in der ISO 9407 auch die Fussbreite), Einheit urspruenglich Millimeter - z.B. 280 steht fuer 28 cm Fusslaenge.",
+    "notes": "Ausnahme: heute stellt Etienne das Raetsel (sonst Georg), dadurch kann Georg mitspielen. Georg meldet sich vorher als Wisser ('Du weisst es, Georg? Ja.'), fragt dann nach der Bestimmung der Schuhgroesse ueber einen Punkt am Fuss und bekommt 'Exakt.' - Zuordnung ueber Namensnennung, keine Diarisierung.",
+    "skipped": false,
+    "_source": "transcript-mine-2026-11-25",
+    "_confidence": "medium",
+    "_points": {
+      "etienne": 0,
+      "jochen": 0,
+      "georg": 1
+    },
+    "_riddleCount": 1
   }
 }
