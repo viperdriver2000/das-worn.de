@@ -5259,5 +5259,21 @@
     "episodeNumber": 386,
     "episodeTitle": "Der Lötkolben ist heiß",
     "_source": "transcript-mine-2026-11-15"
+  },
+  "387": {
+    "hasIdea": true,
+    "ideas": [
+      {
+        "name": "James Big",
+        "summary": "Neubesetzung des Bond-Franchise mit einem uebergewichtigen, brillentragenden Helden mit Haarausfall, der nicht schiesst und statt Martini einen Doener isst - eine Mischung aus MacGyver und Bond. Titelgeber der Folge ('Mein Name ist Big, James Big').",
+        "originator": "unknown",
+        "viability": "witz",
+        "category": "Film"
+      }
+    ],
+    "notes": "Als Casting-/Drehbuch-Idee im Gespraech ueber den naechsten Bond durchgespielt, nicht als Geschaeftsmodell.",
+    "episodeNumber": 387,
+    "episodeTitle": "Mein Name ist Big, James Big !",
+    "_source": "transcript-mine-2026-11-25"
   }
 }
